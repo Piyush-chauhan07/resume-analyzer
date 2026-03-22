@@ -87,7 +87,7 @@ if file:
         # Skills
     found_skills = [skill for skill in skills_list if skill in text]
     missing_skills = [skill for skill in skills_list if skill not in text]
-    score = min(len(found_skills) * 15,)
+    score = min(len(found_skills) * 15, 100)
     st.subheader("💡 Smart Suggestions")
 
     if missing_skills:
